@@ -1,0 +1,191 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 5px;
+}
+.content-card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.quote{
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+.profile1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0.75rem;
+    width: 100%;
+}
+.profile1 img,
+.profile2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.content-detail h3,
+.content-detail h4{
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+.content-detail p{
+    color: #666;
+    font-size: 15px;
+    margin: 0;
+}
+.rating{
+    color: #ffd700;
+    font-size: 1.5rem;
+}
+
+/* Spesifik style for card */
+.card1,
+.card2{
+    max-width: 350px;
+}
+.card2{
+    outline: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+}
+.card3{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.card3 .konten-card{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    border: 1px solid;
+    align-items: flex-start;
+}
+.card3 img{
+    width: 33%;
+    max-width: 250px;
+    border-radius: 15px;
+}
+.card3 .konten-card h4{
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 0.4rem;
+    margin-top: 0.2rem;
+}
+.card3 .kontent-card p{
+    color: #f9f9f9;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.position{
+    font-weight: bold;
+    color: #b4b4b4;
+    margin-bottom: 1.5rem;
+}
+/* bubble card */
+.bubble-card{
+    background-color: black;
+    color: #f9f9f9;
+    padding: 5px;
+    text-align: center;
+    /* border: 0 solid black; */
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.bubble-card::after{
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid black;
+    left: 2.5rem;
+    transform: translateX(-50%);
+}
+.bubble-card a{
+    color: rgb(71, 71, 254);
+    text-decoration: none;
+}
+.bubble-card a:hover{
+    text-decoration: underline;
+}
+/* slider card */
+.slider{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+}
+.slider-quote{
+    color:#333;
+    max-width: 400px;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.slider-profile{
+    gap: 10px;
+    display: flex;
+    justify-content:center ;
+}
+.profile-pic-small{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.slider-profile img:first-of-type,
+.slider-profile img:last-of-type{
+    scale: 0.8;
+    opacity:0.1;
+}
+.slider-profile .left,
+.slider-profile .right{
+    color: #333;
+    font-size: 1.2rem;
+}
+.left:before{
+    content: "❮";
+}
+.right:before{
+    content: "❯";
+}
+.slider-name{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+/* for all testimonials */
+.Testimonials{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card1-2{
+    display: flex;
+    justify-content: center;
+}
+.profile-slider-name{
+    font-weight: bold;
+    font-size:larger;
+}
