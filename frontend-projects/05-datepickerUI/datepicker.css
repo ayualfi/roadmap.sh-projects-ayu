@@ -1,0 +1,27 @@
+*{
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+.datepicker{
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+.datepicker-input{
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.datepicker-input input{
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+.datepicker-input button{
+    background: none;
+    border: none;
+    align-items: center;
+}
