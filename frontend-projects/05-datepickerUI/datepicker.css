@@ -1,6 +1,8 @@
 *{
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 .datepicker{
     position: relative;
@@ -12,16 +14,73 @@
     padding: 8px;
     align-items: center;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .datepicker-input input{
     flex-grow: 1;
     padding: 5px;
     border: none;
     outline: none;
+    padding-right: 45px;
 }
 .datepicker-input button{
     background: none;
     border: none;
     align-items: center;
+}
+.calendar{
+    position: absolute;
+    background-color:white;
+    border: 1px solid #ccc;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    top: 50px;
+}
+.calendar-header{
+    display: flex;
+    background-color: #efefef;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.calendar-header button{
+    border: none;
+    cursor: pointer;
+}
+.calendar-body{
+    padding: 10px 10px;
+}
+.days-name{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding-top: 5px;
+}
+.days-name span{
+    font-weight: bold ;
+    color: #717171;
+}
+.days-date{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.days-date span{
+    margin-bottom: 5px;
+    height: 30px;
+    line-height: 30px;
+}
+.days-name,
+.days-date{
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    text-align: center;
+    gap: 5px;
+    justify-content: center;
+}
+.days-date span:hover{
+    background-color: #ccc;
+    border-radius: 50%;
 }
