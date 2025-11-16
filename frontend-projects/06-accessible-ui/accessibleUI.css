@@ -1,0 +1,27 @@
+:root{
+--background-color:rgb(0, 0, 0);
+--font-color:rgb(255, 255, 255);
+--form-bg-color: rgba(255, 255, 255, 0.1);
+--form-border-color: rgba(255, 255, 255, 0.18);
+--box-shadow:8px 8px 30px rgba(255, 255, 255, 0.18);
+}
+body{
+    font-family: 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:var(--background-color);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color:var(--font-color);
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: var(--form-bg-color);
+    border: 1px solid var(--form-border-color);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 1.5rem;
+}
