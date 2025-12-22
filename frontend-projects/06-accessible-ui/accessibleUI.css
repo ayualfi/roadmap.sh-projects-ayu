@@ -11,6 +11,9 @@
 --progress-bg-color: rgba(255, 255, 255, 0.1);
 --progress-fill-color: linear-gradient(90deg, #ffbb33, #ff8c00);
 --progress-percentage-color: #ffbb33;
+--checklist-incomplete-color: #fff;
+--checklist-complete-color: #6b6b6b;
+--footer_bg_color:rgba(255, 255, 255, 0.125);
 }
 body{
     font-family: 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,8 +35,8 @@ body{
     box-shadow: var(--box-shadow);
     margin-bottom: 1.5rem;
 }
-.form_group{
-    margin-bottom: 1.5rem;
+.form-group{
+    margin-bottom: 1rem;
 }
 label{
     display: block;
@@ -65,7 +68,7 @@ input:focus{
 }
 .shw_password_btn{
     position: absolute;
-    top: 21.5rem;
+    top: 17.2rem;
     right: 38rem;
     background: none;
     transform: translateY(-50%);
@@ -73,7 +76,7 @@ input:focus{
     cursor: pointer;
 }
 .closedeye{
-    top: 26rem;
+    top: 22.5rem;
 }
 .error_message{
     color: var(--error_color);
@@ -121,4 +124,28 @@ input:focus{
     font-size: 1.25rem;
     font-weight: bold;
     color: var(--progress-percentage-color);
+}
+.form_footer{
+    width: 100%;
+    position: relative;
+    background-color: var(--footer_bg_color);
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.complete_form{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.Complete{
+    text-decoration: line-through;
+    margin-bottom: 0.5rem;
+    color: var(--checklist-complete-color);
+}
+.Incomplete{
+    color: var(--checklist-incomplete-color);
+    text-decoration: none;
 }
