@@ -1,0 +1,61 @@
+/* general styling */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(239, 239, 239, 0.91);
+    height: 100vh;
+}
+
+/* navigasinya */
+.nav-item{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+.nav-item:hover{
+    font-size: 20px;
+    color: black;
+}
+
+/* tooltip */
+.nav-item .tooltip{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: black;
+    color: white;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 14px;
+    pointer-events: none;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 6px;
+}
+
+/* hover-effect */
+.nav-item:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%), translateY(0);
+}
+.tooltip::after{
+    content: '';
+    position: absolute;
+    border-color: black transparent transparent transparent;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+}
