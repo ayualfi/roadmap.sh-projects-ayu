@@ -46,8 +46,6 @@ body{
 /* hover-effect */
 .nav-item:hover .tooltip{
     visibility: visible;
-    opacity: 1;
-    transform: translateX(-50%), translateY(0);
 }
 .tooltip::after{
     content: '';
@@ -58,4 +56,36 @@ body{
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
+}
+
+/* Animasi tooltip */
+.fade-in .tooltip{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade-in:hover .tooltip{
+    opacity: 1;
+}
+
+.slide-in .tooltip{
+    transform: translateX(-50%) translateY(-10px);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-in:hover .tooltip{
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.scale-in .tooltip{
+    transform: translateX(-50%) scale(0);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.scale-in:hover .tooltip{
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
 }
