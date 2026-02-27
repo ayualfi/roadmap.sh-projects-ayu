@@ -84,15 +84,59 @@
 //     console.log("Angkot no. "+ noangkot+" tidak beroprasi dengan baik")
 // }}
  // //===============================tugas 4 by pak sandhika===========================================
-var jmlAngkot=10
-var angkotBeroprasi=6
-var noangkot=1
+// var jmlAngkot=10
+// var angkotBeroprasi=6
+// var noangkot=1
 
-for (noangkot=noangkot;noangkot<=jmlAngkot; noangkot=noangkot+1){
-    if (noangkot<=angkotBeroprasi){
-        console.log('angkot no. '+noangkot+' beroprasi dengan baik')
-    }else if(noangkot===8){
-    console.log("Angkot no. "+ noangkot+" lembur")
-    }else{
-    console.log("Angkot no. "+ noangkot+" tidak beroprasi")   
-    }}
+// for (noangkot=noangkot;noangkot<=jmlAngkot; noangkot=noangkot+1){
+//     if (noangkot<=angkotBeroprasi){
+//         console.log('angkot no. '+noangkot+' beroprasi dengan baik')
+//     }else if(noangkot===8){
+//     console.log("Angkot no. "+ noangkot+" lembur")
+//     }else{
+//     console.log("Angkot no. "+ noangkot+" tidak beroprasi")   
+//     }}
+
+// //===============================tugas 5 by pak sandhika===========================================
+// var jmlAngkot=10
+// var angkotBeroprasi=6
+// var noangkot=1
+
+// for (noangkot=noangkot;noangkot<=jmlAngkot; noangkot=noangkot+1){
+//     if (noangkot<=angkotBeroprasi){
+//         console.log('angkot no. '+noangkot+' beroprasi dengan baik')
+//     }else if(noangkot===8 || noangkot===10){
+//     console.log("Angkot no. "+ noangkot+" lembur")
+//     }else{
+//     console.log("Angkot no. "+ noangkot+" tidak beroprasi")   
+//     }}
+    
+    // //===============================tugas 5 by pak sandhika===========================================
+    var jmlAngkot=10
+    var angkotBeroprasi=6
+    var noangkot=1
+    
+    for (noangkot=noangkot;noangkot<=jmlAngkot; noangkot=noangkot+1){
+        if (noangkot<=angkotBeroprasi && noangkot!==5){
+            console.log('angkot no. '+noangkot+' beroprasi dengan baik')
+        }else if(noangkot===8 || noangkot===10){
+        console.log("Angkot no. "+ noangkot+" lembur")
+        }else{
+        console.log("Angkot no. "+ noangkot+" tidak beroprasi")   
+        }}
+ // //===============================tugas 5 by pak sandhika===========================================
+// var jmlAngkot=10
+
+// var cek = 1
+// while(cek<=10){
+//     var kondisiAngkot=prompt("Bagaimana keaadaan angkot nomer "+ cek+ " ?")
+//     if (kondisiAngkot==='baik'){
+//         console.log('angkot no. '+cek+' beroprasi dengan baik')
+//     }else if(kondisiAngkot==='lembur'){
+//     console.log("Angkot no. "+ cek+" lembur")
+//     }else{
+//     console.log("Angkot no. "+ cek+" tidak beroprasi")   
+//     }
+//     cek++
+// }
+
