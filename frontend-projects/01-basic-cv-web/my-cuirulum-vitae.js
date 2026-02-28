@@ -112,18 +112,18 @@
 //     }}
     
     // //===============================tugas 5 by pak sandhika===========================================
-    var jmlAngkot=10
-    var angkotBeroprasi=6
-    var noangkot=1
+    // var jmlAngkot=10
+    // var angkotBeroprasi=6
+    // var noangkot=1
     
-    for (noangkot=noangkot;noangkot<=jmlAngkot; noangkot=noangkot+1){
-        if (noangkot<=angkotBeroprasi && noangkot!==5){
-            console.log('angkot no. '+noangkot+' beroprasi dengan baik')
-        }else if(noangkot===8 || noangkot===10){
-        console.log("Angkot no. "+ noangkot+" lembur")
-        }else{
-        console.log("Angkot no. "+ noangkot+" tidak beroprasi")   
-        }}
+    // for (noangkot=noangkot;noangkot<=jmlAngkot; noangkot=noangkot+1){
+    //     if (noangkot<=angkotBeroprasi && noangkot!==5){
+    //         console.log('angkot no. '+noangkot+' beroprasi dengan baik')
+    //     }else if(noangkot===8 || noangkot===10){
+    //     console.log("Angkot no. "+ noangkot+" lembur")
+    //     }else{
+    //     console.log("Angkot no. "+ noangkot+" tidak beroprasi")   
+    //     }}
  // //===============================tugas 5 by pak sandhika===========================================
 // var jmlAngkot=10
 
@@ -139,4 +139,29 @@
 //     }
 //     cek++
 // }
+
+// var angka =parseInt(prompt("Masukkan angka"))
+// if (angka===5){
+//     alert("angka yang di masukkan adalah 5")
+// }else if (angka===2){
+//     alert("Angka yang dimasukkan adalah 2")
+// }else{
+//     alert("Angka yang dimasukkan bukan 5 atau 2")
+// }
+
+var angka=prompt('Masukkan angka (2 / 4 / 6 / 3 / 5')
+switch (angka){
+    case '2':
+    case '4':
+    case '6':
+        alert('Anda memasukkan angka genap')
+        break;
+    case '3':
+    case '5':
+        alert('Anda memasukkan angka ganjil')
+        break;
+    default:
+        alert('Angka yang anda masukkan bukan 2 / 4 / 6 / 3 / 5 ')
+        break;
+}
 
