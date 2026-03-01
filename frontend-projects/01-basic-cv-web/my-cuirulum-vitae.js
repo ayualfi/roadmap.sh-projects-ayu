@@ -149,19 +149,19 @@
 //     alert("Angka yang dimasukkan bukan 5 atau 2")
 // }
 
-var angka=prompt('Masukkan angka (2 / 4 / 6 / 3 / 5')
-switch (angka){
-    case '2':
-    case '4':
-    case '6':
-        alert('Anda memasukkan angka genap')
-        break;
-    case '3':
-    case '5':
-        alert('Anda memasukkan angka ganjil')
-        break;
-    default:
-        alert('Angka yang anda masukkan bukan 2 / 4 / 6 / 3 / 5 ')
-        break;
-}
+// var angka=prompt('Masukkan angka (2 / 4 / 6 / 3 / 5')
+// switch (angka){
+//     case '2':
+//     case '4':
+//     case '6':
+//         alert('Anda memasukkan angka genap')
+//         break;
+//     case '3':
+//     case '5':
+//         alert('Anda memasukkan angka ganjil')
+//         break;
+//     default:
+//         alert('Angka yang anda masukkan bukan 2 / 4 / 6 / 3 / 5 ')
+//         break;
+// }
 
